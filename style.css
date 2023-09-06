@@ -1,10 +1,11 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f6cfc2;
+  background-color: #f8f6f0;
 }
 
 #header {
@@ -32,4 +33,49 @@ body {
 #header a {
   text-decoration: none;
   color: #000;
+}
+
+#hero {
+  display: flex;
+  height: 90vh;
+  padding: 2rem;
+  align-items: flex-end;
+}
+
+#hero-info h1 {
+  font-size: 8rem;
+  font-family: "Fraunces", serif;
+  letter-spacing: 8px;
+  line-height: 1;
+}
+
+#hero-info p {
+  font-size: 1.5rem;
+}
+
+#hero-button {
+  margin: 1rem 0 0;
+  background-color: #f6cfc2;
+  border: 0;
+  border-radius: 16px;
+  padding: 10px;
+  width: 16rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#hero-images {
+  flex: 1;
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px;
+  gap: 50px;
+}
+
+.hero-image {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000;
+  border-radius: 16px;
 }
